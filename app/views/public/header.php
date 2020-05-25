@@ -8,13 +8,13 @@
 			$usr_name=$_SESSION['user_name'];
 			$usr_role=$_SESSION['user_role'];
 			if($usr_role=="user"){
-				echo ("<a href='?url=panel&no=$usr_no'>$usr_name</a> • <a href='?url=logout'>cikis</a>");
+				echo ("<a href='?url=panel&no=$usr_no'>$usr_name</a> • <a href='?url=logout'>Çıkış</a>");
 			} else if($usr_role=="advisor"){
-				echo ("<a href='?url=advisor&no=$usr_no'>$usr_name</a> • <a href='?url=logout'>cikis</a>");
+				echo ("<a href='?url=advisor&no=$usr_no'>$usr_name</a> • <a href='?url=logout'>Çıkış</a>");
 			} else if($usr_role=="admin"){
-				echo ("<a href='?url=admin&no=$usr_no'>$usr_name</a> • <a href='?url=logout'>cikis</a>");
-			} else echo ("<a href='?url=login'>giris</a>");
-		} else echo ("<a href='?url=login'>giris</a>");
+				echo ("<a href='?url=admin&no=$usr_no'>$usr_name</a> • <a href='?url=logout'>Çıkış</a>");
+			} else echo ("<a href='?url=login'>Giriş</a>");
+		} else echo ("<a href='?url=login'>Giriş</a>");
 		?>
 		</div>
 	</div>
